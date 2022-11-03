@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styles with custom css</title>
+
+    <style>
+        my-element {
+            --primary-color: lightblue;
+            --heading-primary: 40px;
+        }
+
+        .second {
+            --primary-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <my-element>
+        <span slot="title">Title</span>
+        <span slot="body">This is the body</span>
+    </my-element>
+
+    <my-element class="second">
+        <span slot="title">Title 2</span>
+        <span slot="body">This is the body</span>
+    </my-element>
+
+    <my-element>
+        <span slot="title">Title 3</span>
+        <span slot="body">This is the body</span>
+    </my-element>
+
+    <script type="module" src="./my-element.js"></script>
+
+</body>
+
+</html>
