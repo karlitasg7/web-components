@@ -1,0 +1,1 @@
+This project has some examples of web components using vanilla JS
